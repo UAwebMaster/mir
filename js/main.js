@@ -532,4 +532,114 @@ Version: 2.1.0
 		initLayoutLines();
 	});
 
+	$('#start').click(
+		function() {
+			$("#cosmonaut1").animate({	//radek
+				marginTop: '-230',
+				marginLeft: '-500',
+				opacity: "1",
+			}, 8000);
+
+				$("#cosmonaut2").animate({	// kamil
+					marginTop: '-190',
+					marginLeft: '510',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut3").animate({	// lesiczka
+					marginTop: '120',
+					marginLeft: '300',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut4").animate({	// marcin
+					marginTop: '-340',
+					marginLeft: '220',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut5").animate({	// serafin
+					marginTop: '-180',
+					marginLeft: '120',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut6").animate({	// tomek
+					marginTop: '110',
+					marginLeft: '50',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut7").animate({	 // wasyl
+					marginTop: '90',
+					marginLeft: '450',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut8").animate({	 // robert
+					marginTop: '-50',
+					marginLeft: '-650',
+					opacity: "1",
+				}, 8000);
+
+				$("#cosmonaut9").animate({	 // dawid
+					marginTop: '30',
+					marginLeft: '-510',
+					opacity: "1",
+				}, 8000);
+
+			 $("#rocket").animate({	
+			 	marginTop: '-100',
+			 	marginLeft: '-200',
+			 	opacity: "1",
+			 }, 8000);
+
+			$("#start").hide();
+		}
+	);
+
+	// $(document).ready(function(){
+	// 	animateDiv();
+	// });
+	
+	// function makeNewPosition(){
+		
+	// 	// Get viewport dimensions (remove the dimension of the div)
+	// 	var h = $(window).height() - 50;
+	// 	var w = $(window).width() - 50;
+		
+	// 	var nh = Math.floor(Math.random() * h);
+	// 	var nw = Math.floor(Math.random() * w);
+		
+	// 	return [nh,nw];    
+		
+	// }
+	
+	// function animateDiv(){
+	// 	var newq = makeNewPosition();
+	// 	var oldq = $('.containerRocket').offset();
+	// 	var speed = calcSpeed([oldq.top, oldq.left], newq);
+		
+	// 	$('.containerRocket').animate({ top: newq[0], left: newq[1] }, speed, function(){
+	// 	  animateDiv();        
+	// 	});
+		
+	// };
+	
+	// function calcSpeed(prev, next) {
+		
+	// 	var x = Math.abs(prev[1] - next[1]);
+	// 	var y = Math.abs(prev[0] - next[0]);
+		
+	// 	var greatest = x > y ? x : y;
+		
+	// 	var speedModifier = 0.1;
+	
+	// 	var speed = Math.ceil(greatest/speedModifier);
+	
+	// 	return speed;
+	
+	// }
+
+
 })(jQuery);

@@ -2511,7 +2511,7 @@ body.mobile .tab-content>.active {
 	  top: 0;
 	  color: #fff;
   }
-  .vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+  .vid-info { position: absolute; top: 85%; left: 10%; right: 0%; width: 30%; margin: 200px auto; /*background: rgba(0,0,0,0.3);*/ color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
   .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
   .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
   @media (min-aspect-ratio: 16/9) {
@@ -2527,3 +2527,157 @@ body.mobile .tab-content>.active {
   @media all and (max-width: 500px) {
   .vid-info .acronym { display: none; }
   }
+
+  /* .vid-info {
+	  margin-right: 25%;
+	  margin-top: 10%;
+  } */
+
+  .vid-info {
+	 position: relative;
+  }
+
+  .vid-info #start{
+	   margin: 0 auto;
+	   margin-top: 45%;
+	   background: rgba(0,0,0,0.4);
+	   border-color: white;
+	   outline: none;
+	   border-radius: 30%;
+	   width: 125px;
+	   height: 85px;
+  }
+
+  #containerRocket {
+	 /*background-color: green;*/
+	 width: 100%;
+	 width: 900px;
+	 height: 800px;
+  }
+
+  #rocket {
+	  position: absolute;
+	  width: 180px;
+	  height: 370px;
+	  opacity: 0;
+  }
+
+  #cosm1Img, #cosm2Img, #cosm3Img, #cosm4Img, #cosm5Img, #cosm6Img, #cosm7Img {
+	  width: 250px;
+	  height: 355px;
+  }
+
+  #cosm1Img { /*radek*/
+	width: 200px;
+	height: 260px
+  }
+
+  #cosm4Img { /*marcin*/
+	  width: 410px;
+	  height: 550px;
+  }
+
+  #cosm5Img { /*serafin*/
+	width: 280px;
+	height: 410px; 
+  }
+
+  #cosm3Img { /*lesiczka*/
+	width: 180px;
+	height: 270px;
+  } 
+
+  #cosm6Img { /*lesiczka*/
+	width: 180px;
+	height: 270px;
+  } 
+
+  #cosm7Img { /*wasyl*/
+	width: 350px;
+	height: 420px;
+  } 
+
+  #cosm2Img { /*kamil*/
+	  width: 250;
+	  height: 285px;
+  }
+
+  #cosm8Img { /*robert*/
+	width: 200px;
+	height: 260px;
+  } 
+
+  #cosm9Img { /*dawid*/
+	width: 240px;
+	height: 320px;
+  } 
+
+  #cosmonaut1, #cosmonaut2, #cosmonaut3, #cosmonaut4, #cosmonaut5, #cosmonaut6, #cosmonaut7, #cosmonaut8, #cosmonaut9 {
+	  position: absolute;
+	  opacity: 0;
+	  img {
+		width: 50px;
+		height: 80px;
+	  }
+  }
+
+  .cosmonauts img{
+	  width: 75px;
+	  height: 125px;
+	  display: inline-block;
+	  float: left;
+  }
+
+@-webkit-keyframes rotating {	
+	0%   {-webkit-transform: rotate(8deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+    50%  {-webkit-transform: rotate(5deg);}
+    100% {-webkit-transform: rotate(8deg);}
+}
+
+.rotating {
+    -webkit-animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating2 {	
+	0%   {-webkit-transform: rotate(-8deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+    50%  {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(-8deg);}
+}
+
+.rotating2 {
+    -webkit-animation: rotating2 10s linear infinite;
+}
+
+@-webkit-keyframes rotating3 {	
+	0%   {-webkit-transform: rotate(4deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+    50%  {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(4deg);}
+}
+
+.rotating3 {
+    -webkit-animation: rotating3 10s linear infinite;
+}
+
+@-webkit-keyframes rotating3 {	
+	0%   {-webkit-transform: rotate(4deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+    50%  {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(4deg);}
+}
+
+.rotating4 {
+    -webkit-animation: rotating4 30s linear infinite; /*infinite*/
+}
+
+@-webkit-keyframes rotating4 {	
+	0%   {-webkit-transform: rotate(55deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+	50%  {-webkit-transform: rotate(-10deg);}
+	90% {opacity: 1}
+	100% {-webkit-transform: rotate(32deg);
+		opacity: 0;
+	}
+}
