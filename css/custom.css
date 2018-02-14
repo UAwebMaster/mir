@@ -1,0 +1,12 @@
+body {
+    color: #a94442;
+    font-weight: 900;
+}
+.photo {
+    height: 200px;
+    max-width: 50%;
+    border-radius: 49%;
+}
+.row-padding {
+    padding: 10px;
+}
