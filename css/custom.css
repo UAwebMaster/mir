@@ -54,3 +54,6 @@ body {
 .clip-internal {
     margin-top: 15px;
 }
+.afterwork {
+    min-height: 1020px !important;
+}
