@@ -2204,8 +2204,11 @@ hr {
 }
 
 .photo-image {
+	width: 175px;
+	height: 175px;
 	max-width: 350px;
 	margin: 0 auto;
+	border-radius: 50%;
 }
 
 .height-auto {
@@ -2526,8 +2529,13 @@ body.mobile .tab-content>.active {
   }
   @media all and (max-width: 500px) {
   .vid-info .acronym { display: none; }
+  .photo {
+	  width: 100px;
+	  height: 100px;
+  }
   }
 
+  
   /* .vid-info {
 	  margin-right: 25%;
 	  margin-top: 10%;
@@ -2560,6 +2568,19 @@ body.mobile .tab-content>.active {
 	  width: 180px;
 	  height: 370px;
 	  opacity: 0;
+  }
+
+  #coolCarContainer {
+	width: 100%;
+	height: 100px;
+	background: red;
+  }
+
+  #redCar{
+	position: absolute;
+	opacity: 0;
+	width: 100px;
+	height: 100px;	
   }
 
   #cosm1Img, #cosm2Img, #cosm3Img, #cosm4Img, #cosm5Img, #cosm6Img, #cosm7Img {
@@ -2628,6 +2649,16 @@ body.mobile .tab-content>.active {
 	  float: left;
   }
 
+.after-work {
+	position: relative;
+}
+
+.after-work #ino {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+}
+
 @-webkit-keyframes rotating {	
 	0%   {-webkit-transform: rotate(8deg)}
     25%  {-webkit-transform: rotate(0deg);}
@@ -2677,7 +2708,41 @@ body.mobile .tab-content>.active {
     25%  {-webkit-transform: rotate(0deg);}
 	50%  {-webkit-transform: rotate(-10deg);}
 	90% {opacity: 1}
-	100% {-webkit-transform: rotate(32deg);
+	100% {-webkit-transform: rotate(22deg);
 		opacity: 0;
 	}
+}
+
+.rotating5 {
+    -webkit-animation: rotating5 5s linear infinite; /*infinite*/
+}
+
+@-webkit-keyframes rotating5 {	
+	0%   {-webkit-transform: rotate(8deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+    50%  {-webkit-transform: rotate(-8deg);}
+    100% {-webkit-transform: rotate(8deg);}
+}
+
+.carAnimation {
+    -webkit-animation: carAnimation 60s linear infinite; /*infinite*/
+}
+
+@-webkit-keyframes carAnimation {	
+	0%   {-webkit-transform: rotate(150deg)}
+    25%  {-webkit-transform: rotate(0deg);}
+    50%  {-webkit-transform: rotate(-50deg);}
+	100% {-webkit-transform: rotate(200deg);}
+} 
+
+.occupation {
+	background-color: rgba(0,0,0,0.3);
+}
+
+/* .textCenter {
+	text-align: center;
+} */
+
+.audio {
+	
 }

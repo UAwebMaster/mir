@@ -2,7 +2,7 @@ body {
     color: #fff;
     font-weight: 900;
 }
-.photo {
+/* .photo {
     max-height: 200px;
     width: 200px;
     border-radius: 49%;
@@ -18,6 +18,48 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+} */
+
+@media all and (min-width: 900px) {
+    .photo {
+        max-height: 145px;
+        width: 145px;
+        border-radius: 49%;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+	.photo img {
+        vertical-align: middle;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .photo {
+        max-height: 200px;
+        width: 200px;
+        border-radius: 49%;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+	.photo img {
+        vertical-align: middle;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
 }
 .row-padding {
     padding: 10px;
