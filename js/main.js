@@ -317,11 +317,6 @@ Version: 2.1.0
 				delay: 5000,
 				transition: 'fade',
 				transitionDuration: 1000,
-				slides: [
-					{ src: 'demo/images/image-1.jpg' },
-					{ src: 'demo/images/image-2.jpg' },
-					{ src: 'demo/images/image-5.jpg' }
-				]
 			});
 		}
 		
@@ -329,11 +324,6 @@ Version: 2.1.0
 		if ($('body').hasClass('kenburns-background')) {
 
 			var kenburnsDisplayBackdrops = false;
-			var kenburnsBackgrounds = [
-				{ src: 'demo/images/image-5.jpg', valign: 'top' },
-				{ src: 'demo/images/image-2.jpg', valign: 'top' },
-				{ src: 'demo/images/image-1.jpg', valign: 'top' }
-			];
 
 			$('body').vegas({
 				preload: true,
@@ -341,7 +331,6 @@ Version: 2.1.0
 				transitionDuration: 4000,
 				timer: false,
 				delay: 10000,
-				slides: kenburnsBackgrounds,
 				walk: function (nb) {
 					if (kenburnsDisplayBackdrops === true) {
 						var backdrop;
