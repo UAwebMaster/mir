@@ -68,15 +68,15 @@
     <!-- Site Nav -->
     <nav class="site-nav">
         <ul>
-            <li><a href="#home" title="MIR" class="move-to active"><span></span></a></li>
-            <li><a href="#about" title="Projekty" class="move-to"><span></span></a></li>
-            <li><a href="#tradepartners" title="TradePartners" class="move-to"><span></span></a></li>
-            <li><a href="#fleets" title="Fleets" class="move-to"><span></span></a></li>
-            <li><a href="#freights" title="Frachty" class="move-to"><span></span></a></li>
-            <li><a href="#team" title="Zespół" class="move-to"><span></span></a></li>
-            <li><a href="#backend" title="Backend" class="move-to"><span></span></a></li>
-            <li><a href="#front" title="Frontend" class="move-to"><span></span></a></li>
-            <li><a href="#afterwork" title="PoPracy" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#home" title="MIR" class="move-to active"><span></span></a></li>
+            <li class="default"><a href="#about" title="Projekty" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#tradepartners" title="TradePartners" class="move-to"><span></span></a></li>
+            <li id="fleet"><a href="#fleets" title="Fleets" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#freights" title="Frachty" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#team" title="Zespół" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#backend" title="Backend" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#front" title="Frontend" class="move-to"><span></span></a></li>
+            <li class="default"><a href="#afterwork" title="PoPracy" class="move-to"><span></span></a></li>
         </ul>
         <div class="line vertical top"></div>
         <div class="line vertical bottom"></div>
@@ -215,7 +215,7 @@
                                             <div class="section-header animated" data-animation="fadeInUp" data-animation-delay="700">
                                                 <h2 class="section-title">Fleets</h2>
                                                 <div class="line-separate line-white line-center"><span></span></div>
-                                                <video width="760" height="480" controls>
+                                                <video id="myVideo" width="760" height="480" controls>
                                                         <source src="video/fleet-video.mp4" type="video/mp4">
                                                 </video>
                                             </div>
@@ -489,6 +489,15 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $("#fleet").click(function () {
+            $("#myVideo")[0].currentTime = 0;
+            $("#myVideo")[0].play();
+        });
+        $(".default").click(function () {
+            $("#myVideo")[0].pause();
+        });
+    </script>
 
 </body>
 
