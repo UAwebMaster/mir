@@ -64,6 +64,9 @@ body {
 .row-padding {
     padding: 10px;
 }
+.row-big-padding {
+    padding: 30px;
+}
 .clip {
     margin: 5px;
     width: 150px;
